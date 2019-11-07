@@ -2,17 +2,22 @@
 @import "modules/_navbar";
 @import "modules/_users";
 @import "modules/_lightbox";
-@import "modules/error";
+@import "modules/_error";
 
 body {
   color: $main-color;
   background-color: $body-bg;
+  font-family: 'Lucida Sans';
 }
+
+
 
 h1,
 h2,
 h3 {
   color: $heading-color;
+  max-width: 300px;
+  
 }
 
 .panel {
@@ -20,8 +25,14 @@ h3 {
 }
 
 .panel:nth-child(odd) {
-  background-color: green;
-  color: white;
+  background-color: white;
+  color: black;
+}
+
+
+
+.team{
+  padding: 0 40px;
 }
 
 #to-top {
@@ -31,4 +42,14 @@ h3 {
   display: none;
 }
 
-@import "modules/_footer";
+.u-link{
+  max-width: 300px;
+}
+
+.user-panel{
+  max-width: 400px;
+}
+
+
+
+
